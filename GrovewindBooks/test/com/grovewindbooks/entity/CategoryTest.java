@@ -1,16 +1,12 @@
-import com.grovewindbooks.entity.Users;
-
+package com.grovewindbooks.entity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
-public class UsersTest {
+public class CategoryTest {
 
 	public static void main(String[] args) {
-		Users user1 = new Users();
-		user1.setEmail("wh8273e@email.com");
-		user1.setFullName("William Henry");
-		user1.setPassword("Tpass834");
+		Category newCat = new Category("Advanced Java");
 
 		//Instantiating EntityManager and EntityManagerFactory
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("GrovewindBooks");
@@ -18,14 +14,14 @@ public class UsersTest {
 		
 		//Begin Transaction
 		entityManager.getTransaction().begin();
-		entityManager.persist(user1);
+		entityManager.persist(newCat);
 		
 		//Commit and close Transaction
 		entityManager.getTransaction().commit();
 		entityManager.close();
 		entityManagerFactory.close();
 		
-		System.out.println("A users object was persisted.");
+		System.out.println("A category object was persisted.");
 	}
 
 }

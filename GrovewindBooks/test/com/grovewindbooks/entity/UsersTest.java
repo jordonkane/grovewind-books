@@ -1,10 +1,9 @@
-import com.grovewindbooks.entity.Users;
-
+package com.grovewindbooks.entity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
-public class CategoryTest {
+public class UsersTest {
 
 	public static void main(String[] args) {
 		Users user1 = new Users();
