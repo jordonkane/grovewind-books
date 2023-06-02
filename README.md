@@ -1,4 +1,4 @@
-# Template
+# Grovewind Books: An Online Bookstore
 ## Screenshots
 ## Description
 - 1
