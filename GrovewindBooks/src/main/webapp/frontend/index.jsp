@@ -13,6 +13,7 @@
 		<h2>New Books:</h2>
 		<h2>Best-sellers:</h2>
 		<h2>Favorites:</h2>
+		<br/><br/>
 	</div>
 	<jsp:directive.include file="footer.jsp"/>
 </body>
