@@ -5,8 +5,8 @@
 #### A simple bookstore website using JSP, JDBC, Servlet, and Hibernate
 I created this project with guidance from a Udemy instructor by the name of Nam Ha Minh. His class went into great deal about Java fullstack fundamentals.
 ### Technology used
-- Java, Servlet, JSP, Hibernate, JUnit
-- HTML, CSS
+- Java, Servlet, Hibernate, JUnit
+- JSP, HTML
 - MySQL
 ## What I learned:
 #### Java:
@@ -19,7 +19,7 @@ I created this project with guidance from a Udemy instructor by the name of Nam 
 #### MySQL:
 - Learned how to create and manage a database from the Command Line Client and MySQL Workbench.
 #### Front-end Development:
-- Learned how to design multiple dynamic webpages using JSP, HTML, and CSS.
+- Learned how to design multiple dynamic webpages using JSP and HTML.
 #### Project Planning:
 - Learned how to structure and map out a project from the beginning with software architecture diagrams and database diagrams.
 ## Author Info
