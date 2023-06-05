@@ -4,9 +4,18 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Sign in</title>
 </head>
 <body>
-
+	<jsp:directive.include file="header.jsp"/>
+	<div align="center">
+		<h2>Please Sign in:</h2>
+		<form>
+			Email: <input type="text" size="10"><br>
+			Password: <input type="text" size="10">
+			<input type="submit" value="Login" />
+		</form>
+	</div>
+	<jsp:directive.include file="footer.jsp"/>
 </body>
 </html>
