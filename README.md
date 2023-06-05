@@ -3,7 +3,7 @@
 ![ss0](https://github.com/jordonkane/grovewind-books/assets/55868384/68a96daf-9175-4542-81fe-ec7ac14a7bdc)
 ## Description
 #### A simple bookstore website using JSP, JDBC, Servlet, and Hibernate
-I created this project with guidance from a Udemy instructor by the name of Nam Ha Minh.
+I created this project with guidance from a Udemy instructor by the name of Nam Ha Minh. His class went into great deal about Java fullstack fundamentals.
 ### Technology used
 - Java, Servlet, JSP, Hibernate, JUnit
 - HTML, CSS
