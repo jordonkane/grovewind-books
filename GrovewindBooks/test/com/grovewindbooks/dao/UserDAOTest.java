@@ -1,7 +1,11 @@
 package com.grovewindbooks.dao;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+
+import java.util.List;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -74,6 +78,58 @@ public class UserDAOTest {
 		//evaluate the difference
 		assertEquals(expected, actual);
 		
+	}
+
+	@Test
+	public void testGetUsersFound() {
+		Integer userId = 1;
+		Users user = userDAO.get(userId);
+		if (user != null) {
+			System.out.println(user.getEmail());
+		}
+		System.out.println(user.getEmail());
+		
+		assertNotNull(user);
+	}
+	
+	@Test
+	public void testGetUsersNotFound() {
+		Integer userId = 99;
+		Users user = userDAO.get(userId);
+		
+		assertNull(user);
+	}
+	
+	@Test
+	public void testDeleteUsers() {
+		Integer userId = 5;
+		userDAO.delete(userId);
+		
+		//if the user is not found, then the test was successful
+		Users user  = userDAO.get(userId);
+		
+		assertNull(user);
+	}
+	
+	@Test(expected = Exception.class)
+	public void testDeleteNonExistentUsers() {
+		Integer userId = 55;
+		userDAO.delete(userId);
+	}
+	
+	@Test
+	public void testListAll() {
+		List<Users> listUsers = userDAO.listAll();
+		
+		for (Users user : listUsers) {
+			System.out.println(user.getEmail());
+		}
+	}
+	
+	@Test
+	public void testCount() {
+		long totalUsers = userDAO.count();
+		assertEquals(5, totalUsers);
 	}
 	
 	//close resources created by the setUpClass method
