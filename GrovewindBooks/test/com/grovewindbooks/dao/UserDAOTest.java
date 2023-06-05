@@ -1,5 +1,6 @@
 package com.grovewindbooks.dao;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.AfterClass;
@@ -48,6 +49,30 @@ public class UserDAOTest {
 		Users user1 = new Users();
 		
 		user1 = userDAO.create(user1);
+		
+	}
+	
+	//test updateUsers
+	@Test
+	public void testUpdateUsers() {
+		//instantiation
+		Users user = new Users();
+		
+		//set user information
+		user.setUserId(1);
+		user.setEmail("eueh@email.net");
+		user.setFullName("Henry Jones");
+		user.setPassword("testpass");
+		
+		//pass through method
+		user = userDAO.update(user);
+		
+		//expected value vs database entry
+		String expected = "testpass";
+		String actual = user.getPassword();
+		
+		//evaluate the difference
+		assertEquals(expected, actual);
 		
 	}
 	
