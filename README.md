@@ -8,13 +8,15 @@
 - MySQL
 ## What I learned:
 #### Java:
-- Creating Java model classes
-- What DAO classes are and how to create them
+- Learned how to design Java model classes
+- Learned what DAO classes are and how to create them
 - Fundamentals of writing unit tests with JUnit
-
-- I learned how to structure and map out a project from the beginning with software architecture diagrams and database diagrams.
-- 
-## How to Use
-- 1
+- Learned how to utilize Servlets
+#### MySQL:
+- Learned how to create and manage a database from the Command Line Client and MySQL Workbench.
+#### Front-end Development:
+- Learned how to design 
+#### Project Planning:
+- Learned how to structure and map out a project from the beginning with software architecture diagrams and database diagrams.
 ## Author Info
 - Website: [LinkedIn - Jordon Kane](https://www.linkedin.com/in/jordonkane/)
