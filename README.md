@@ -1,6 +1,6 @@
 # Grovewind Books: An Online Bookstore
 ## Screenshots
-![Uploading ss0.jpg…]()
+![image](https://github.com/jordonkane/grovewind-books/assets/55868384/e9888b84-3bb7-46d1-b232-e82e1c3cf9e9)
 ## Description
 - A simple bookstore website using JSP, Servlet, and Hibernate
 ### Technology used
