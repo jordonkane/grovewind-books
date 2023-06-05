@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Grovewind Books - An Online Bookstore</title>
 </head>
 <body>
-
+	<h1>Welcome to Grovewind Books</h1>
 </body>
 </html>
