@@ -5,7 +5,7 @@
 - A simple bookstore website using JSP, Servlet, and Hibernate
 ### Technology used
 - Java, Servlet, JSP, Hibernate, JUnit
-- HTML, CSS, Javascript
+- HTML, CSS
 - MySQL
 ## What I learned:
 #### Java:
@@ -16,7 +16,7 @@
 #### MySQL:
 - Learned how to create and manage a database from the Command Line Client and MySQL Workbench.
 #### Front-end Development:
-- Learned how to design 
+- Learned how to design multiple dynamic webpages using JSP, HTML, and CSS.
 #### Project Planning:
 - Learned how to structure and map out a project from the beginning with software architecture diagrams and database diagrams.
 ## Author Info
