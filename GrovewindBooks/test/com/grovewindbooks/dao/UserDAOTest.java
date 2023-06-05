@@ -12,25 +12,46 @@ import jakarta.persistence.Persistence;
 
 public class UserDAOTest {
 
+	//Test createUsers method
 	@Test
 	public void testCreateUsers() {
 		Users user1 = new Users();
-		user1.setEmail("wh8273e@email.com");
-		user1.setFullName("William Henry");
-		user1.setPassword("Tpass834");
+		user1.setEmail("test@email.com");
+		user1.setFullName("Test Name");
+		user1.setPassword("testpassword");
 
 		//Instantiating EntityManager and EntityManagerFactory
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("GrovewindBooks");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		
-		//Begin Transaction
-		entityManager.getTransaction().begin();
-		entityManager.persist(user1);
+		UserDAO userDAO = new UserDAO(entityManager);
+		user1 = userDAO.create(user1);
 		
-		//Commit and close Transaction
-		entityManager.getTransaction().commit();
 		entityManager.close();
 		entityManagerFactory.close();
+		
+		//Test if UserId is greater than 0
+		assertTrue(user1.getUserId() > 0);
 	}
 
+	@Test
+	public void testCreateUsersFieldNotSet() {
+		Users user1 = new Users();
+		user1.setEmail("test@email.com");
+		user1.setFullName("Test Name");
+		user1.setPassword("testpassword");
+
+		//Instantiating EntityManager and EntityManagerFactory
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("GrovewindBooks");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		
+		UserDAO userDAO = new UserDAO(entityManager);
+		user1 = userDAO.create(user1);
+		
+		entityManager.close();
+		entityManagerFactory.close();
+		
+		//Test if UserId is greater than 0
+		assertTrue(user1.getUserId() > 0);
+	}
 }
