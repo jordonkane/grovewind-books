@@ -1,3 +1,8 @@
 <div align="center">
-		<h1>Header: logo, search bar, menu</h1>
+	<div>
+		<img src="images/grovewind_logo.png" />
+	</div>
+	<div>
+		<input type="text" name="keyword" size="50" />
+	</div>
 </div>
