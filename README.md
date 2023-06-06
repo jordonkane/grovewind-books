@@ -1,6 +1,6 @@
 # Grovewind Books: An Online Bookstore
 ## Screenshots
-#### Front-end
+#### Frontend
 ![ss0](https://github.com/jordonkane/grovewind-books/assets/55868384/68a96daf-9175-4542-81fe-ec7ac14a7bdc)
 #### Database diagram
 ![db_diagram](https://github.com/jordonkane/grovewind-books/assets/55868384/eadda733-25ff-483b-bf78-c6a010c65241)
