@@ -1,6 +1,7 @@
 # Grovewind Books: An Online Bookstore
 ## Screenshots
 ![ss0](https://github.com/jordonkane/grovewind-books/assets/55868384/68a96daf-9175-4542-81fe-ec7ac14a7bdc)
+![db_diagram](https://github.com/jordonkane/grovewind-books/assets/55868384/eadda733-25ff-483b-bf78-c6a010c65241)
 ## Description
 #### A simple bookstore website using JSP, JDBC, Servlet, and Hibernate
 I created this project with guidance from a Udemy instructor by the name of Nam Ha Minh. His class went into great deal about Java fullstack fundamentals.
