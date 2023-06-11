@@ -8,7 +8,7 @@
 I created this project with guidance from a Udemy instructor by the name of Nam Ha Minh. His class went into great deal about fullstack development with Java.
 ### Technology used
 - Java, Servlet, Hibernate, JUnit
-- JSP, HTML
+- JSP, HTML, CSS
 - MySQL
 ## What I learned:
 #### Java:
