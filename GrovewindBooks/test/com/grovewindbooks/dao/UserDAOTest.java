@@ -23,7 +23,7 @@ public class UserDAOTest {
 	private static EntityManager entityManager;
 	private static UserDAO userDAO;
 	
-	//instantiate entityManager, entityManagerFactory, and userDAO
+	// Instantiate entityManager, entityManagerFactory, and userDAO
 	@BeforeClass
 	public static void setUpClass() {
 		entityManagerFactory = Persistence.createEntityManagerFactory("GrovewindBooks");
@@ -33,7 +33,7 @@ public class UserDAOTest {
 		userDAO = new UserDAO(entityManager);
 	}
 
-	//Test createUsers method
+	// Test createUsers method
 	@Test
 	public void testCreateUsers() {
 		Users user1 = new Users();
@@ -47,7 +47,7 @@ public class UserDAOTest {
 		assertTrue(user1.getUserId() > 0);
 	}
 	
-	//null user entry test
+	// Null user entry test
 	@Test(expected = PersistenceException.class)
 	public void testCreateUsersFieldNotSet() {
 		Users user1 = new Users();
@@ -56,7 +56,7 @@ public class UserDAOTest {
 		
 	}
 	
-	//test updateUsers
+	// Test updateUsers
 	@Test
 	public void testUpdateUsers() {
 		//instantiation
@@ -80,6 +80,7 @@ public class UserDAOTest {
 		
 	}
 
+	// Test getUsersFound
 	@Test
 	public void testGetUsersFound() {
 		Integer userId = 1;
@@ -91,7 +92,8 @@ public class UserDAOTest {
 		
 		assertNotNull(user);
 	}
-	
+
+	// Test getUsersNotFound
 	@Test
 	public void testGetUsersNotFound() {
 		Integer userId = 99;
@@ -99,7 +101,8 @@ public class UserDAOTest {
 		
 		assertNull(user);
 	}
-	
+
+	// Test deleteUsers
 	@Test
 	public void testDeleteUsers() {
 		Integer userId = 5;
@@ -110,13 +113,15 @@ public class UserDAOTest {
 		
 		assertNull(user);
 	}
-	
+
+	// Test deleteNonExistentUsers
 	@Test(expected = Exception.class)
 	public void testDeleteNonExistentUsers() {
 		Integer userId = 55;
 		userDAO.delete(userId);
 	}
-	
+
+	// Test listAll
 	@Test
 	public void testListAll() {
 		List<Users> listUsers = userDAO.listAll();
@@ -125,14 +130,15 @@ public class UserDAOTest {
 			System.out.println(user.getEmail());
 		}
 	}
-	
+
+	// Test count
 	@Test
 	public void testCount() {
 		long totalUsers = userDAO.count();
 		assertEquals(5, totalUsers);
 	}
 	
-	//close resources created by the setUpClass method
+	// Close resources created by the setUpClass method
 	@AfterClass
 	public static void tearDownClass() {
 		entityManager.close();
