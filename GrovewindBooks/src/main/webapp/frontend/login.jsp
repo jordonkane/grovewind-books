@@ -9,7 +9,7 @@
 <body>
 	<jsp:directive.include file="header.jsp"/>
 	<div align="center">
-		<h2>Please Sign in:</h2>
+		<h2>Please Sign In:</h2>
 		<form>
 			Email: <input type="text" size="10"><br>
 			Password: <input type="text" size="10">
